@@ -1,11 +1,13 @@
 
 body {
-    height: 100%;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 figure{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 25%;
 }
