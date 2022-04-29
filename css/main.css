@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+
+#content{
+	width: 75%;
+	padding: 25px;	
+}
+
+#home {
+	flex-grow: 6;
+	text-align: left;
+	font-family: "Changa One", sans-serif;
+	font-size: 16pt;
+}
+
+
+body {
+	font-family: "Varela Round", sans-serif;
+}
+
+h1, h2{
+	text-align: center;
+}
+
+
+p{
+	text-align: justify;
+}
+
+nav, footer{
+	font-size: 10pt;
+	display: flex;
+	position: absolute;
+  	width: 100%;
+  	left: 0;
+}
+
+nav p{
+	padding: 12px;
+	flex-grow: 1;
+	text-align: center;
+	color: white;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+}
+
+nav {
+  	top: 0;
+	justify-content: space-around;
+}
+
+footer{
+	font-size: 8pt;
+	height: 36px;
+	bottom: 0;
+	color: rgba(255,255,255,0.35);
+	text-align: center;
+	justify-content: space-between;
+}
+
+footer p{
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
