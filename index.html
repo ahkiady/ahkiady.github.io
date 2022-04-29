@@ -7,8 +7,10 @@
 	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-	<h1>About Me</h1>
-	<p>Étudiant passionné d'informatique, j'aime apprendre
+	<div id="about" class="content">
+		<img id="profile_pic" src="images/me.jpg" alt="Picture of me">
+		<h1>About Me</h1>
+		<p>Étudiant passionné d'informatique, j'aime apprendre
 divers langages de programmations et me renseigner sur
 les dernières actualités technologiques, notamment en ce
 qui concerne l'open source et les logiciels libres. J'ai appris
@@ -19,15 +21,18 @@ différents projets en C et web, notamment un site internet
 hébergé sur un Raspberry Pi, et servant d'interface pour
 ma bibliothèque multimédia ou encore un moteur de
 rendu de formes simples en 3D, pour un projet
-universitaire.
-	</p>
+universitaire.</p>
+	</div>
 	<footer>
 		<ul>
 			Contacts:
 			<li><a href="https://www.linkedin.com/in/ahkiady/">LinkedIn</a></li>
 			<li><a href="mailto:ahkiady@pm.me">E-mail</a></li>
-			<li><a href="https://github.com/ahkiady">Github</a></li>
+			<li>Mes projets sont sur <a href="https://github.com/ahkiady">Github</a></li>
 		</ul>
 	</footer>
+	<video autoplay loop id="bgVideo">
+		<source src="images/bubbles.webm" type="video/webm">
+	</video>
 </body>
 </html>

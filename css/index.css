@@ -1,13 +1,29 @@
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#profile_pic{
+	width: 250px;
+	border-radius: 125px;
 }
-figure{
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
+
+h1 {
+	text-align: center;
+}
+
+p{
+	text-align: justify;
+}
+
+.content {
+	padding: 50px;
+	background-color: #fafafa;
+	border: 25px white;
+	color: #222222;
+	border-radius: 25px;
+}
+
+#bgVideo{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -100;
 }
