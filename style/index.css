@@ -1,0 +1,31 @@
+body {
+    font-family: "Noto Sans Condensed", sans-serif;
+    background-image: url("/img/bg.jpg");
+    background-size: cover;
+    color: white;
+}
+
+#profile{
+    text-align: center;
+    width: 55%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+#pfp {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: azure solid 05px;
+    border-radius: 100%;
+}
+
+#netlinks{
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
