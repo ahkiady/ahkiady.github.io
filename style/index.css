@@ -1,8 +1,17 @@
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 body {
     font-family: "Noto Sans Condensed", sans-serif;
-    background-image: url("/img/bg.jpg");
-    background-size: cover;
     color: white;
+}
+#canvas{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }
 
 #profile{
