@@ -1,25 +1,68 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="UTF-8"/>
         <title>Andraina Ho Kiady</title>
         <link rel="stylesheet" type="text/css" href="style/index.css">
     </head>
-    <body>
-    <canvas id="canvas" width="400" height="400"></canvas>
-        <div id="profile">
-            <img id="pfp" src="img/profile.jpg">
-            <h1>Andraina Ho Kiady RANDRIAMANANTENA</h1>
-            <h2>Étudiant en Informatique</h2>
-            <p id="desc">Bienvenue sur mon site web !</p>
-        </div>
-    <footer>
+    <body onload="run()">
+    <header>
+        <p id="quotes">ahk</p>
         <ul id="netlinks">
-            <li>github</li>
-            <li>LinkedIn</li>
-            <li>ahkiady@pm.me</li>
+            <li><a href="mailto:ahkiady@pm.me"><img src="img/mail_icon.svg" alt="e-mail" style="width: 32px"></a></li>
+            <li><a href="https://www.linkedin.com/in/andraina-ho-kiady-9a690425b/"><img src="img/In-Blue-72.png" alt="LinkedIn" style="width: 32px"></a></li>
+            <li><a href="https://github.com/ahkiady"><img src="img/github-mark.svg" alt="GitHub" style="width: 32px"></a></li>
         </ul>
-    </footer>
+    </header>
+    <div id="profile">
+        <img id="pfp" src="img/profile.jpg" alt="picture">
+        <h1>Andraina Ho Kiady RANDRIAMANANTENA</h1>
+        <h3>Étudiant en Informatique</h3>
+    </div>
+    <div id="container">
+        <div class="about">
+            <h2>À propos de moi</h2>
+            <p>Étudiant passionné d'informatique, j'aime apprendre de nouvelles choses tout le
+                temps, que cela soit un nouveau langage de programmation ou bien découvrir un
+                nouveau système d'exploitation et même de nouvelles langues. Je suis à la
+                recherche d'une alternance en tant que DevOps afin de me faire une expérience
+                professionnelle solide dans ce métier.
+            </p>
+        </div>
+        <div class="about">
+            <h2>Mes compétences</h2>
+            <ul><h3>Git</h3>
+                <li>Gitlab</li>
+                <li>Github</li>
+            </ul>
+            <ul><h3>Langages de programmation</h3>
+                <li>C/C++</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+            <ul><h3>Linux</h3>
+                <li>Administration</li>
+                <li>Scripting</li>
+                <li>Réseau</li>
+                <li>Programmation Système</li>
+                <li>Virtualisation</li>
+            </ul>
+            <ul><h3>Web</h3>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>PHP</li>
+            </ul>
+        </div>
+        <div class="about">
+            <h2>Projets</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat purus quam, at tincidunt sem aliquam quis.
+                Ut scelerisque ipsum sit amet orci vehicula, ac sodales metus commodo. Aliquam erat volutpat. Aliquam
+                posuere ut magna sit amet lacinia. Suspendisse eleifend cursus massa mattis consectetur. Duis porta
+                massa non tortor dignissim varius. Nunc eros eros, feugiat eu ligula ut, dapibus maximus nisl.
+            </p>
+        </div>
+    </div>
     </body>
 </html>
 <script src="script/script.js"></script>

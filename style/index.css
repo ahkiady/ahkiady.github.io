@@ -1,27 +1,35 @@
-html, body {
-    margin: 0 !important;
-    padding: 0 !important;
+
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+
+h2{
+    text-align: center !important;
 }
 
 body {
+    background: #FFDE00;
+    background-size: cover;
     font-family: "Noto Sans Condensed", sans-serif;
-    color: white;
+    color: #262626;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
+
+html {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
 #canvas{
     position: fixed;
     left: 0;
     top: 0;
-    z-index: -1;
+    z-index: -3;
 }
 
 #profile{
     text-align: center;
     width: 55%;
     margin: 0 auto;
-}
-
-h1 {
-    font-weight: bolder;
 }
 
 #pfp {
@@ -32,7 +40,83 @@ h1 {
     border-radius: 100%;
 }
 
+.about{
+    color: black;
+    background: azure;
+    text-align: center;
+    padding: 25px;
+    width: 30%;
+    border-radius: 25px;
+}
+
+.about:hover, #pfp:hover{
+    animation: 0.25s ease-in 1 forwards chroma;
+}
+
+@keyframes chroma {
+    from{
+        box-shadow:  0 0 rgba(0, 255, 200, .75),
+                     0 0 rgba(255, 0, 120, 0.75),
+                     0 0 rgba(120, 255, 0, 0.75);
+    }
+
+    to{
+        box-shadow: -25px -25px rgba(0, 255, 200, .75),
+                     30px -15px rgba(255, 0, 120, 0.75),
+                     -10px 25px rgba(120, 255, 0, 0.75);
+    }
+}
+
+#container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    & li, h3 {
+        text-align: left;
+    }
+}
+
+p{
+    text-align: justify;
+}
+
+header{
+    top: 0;
+    margin: 0 auto;
+    position: sticky;
+    width: 99%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+#quotes{
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    flex: 75%;
+}
+
+#quotes:hover, h1:hover{
+    animation: 1s both chromaText;
+}
+
+@keyframes chromaText {
+    from{
+        text-shadow:  0 0 rgba(0, 255, 200, .75),
+        0 0 rgba(255, 0, 120, 0.75),
+        0 0 rgba(120, 255, 0, 0.75);
+    }
+
+    to{
+        text-shadow: -2px -2px rgba(0, 255, 200, .75),
+        3px -1px rgba(255, 0, 120, 0.75),
+        -1px 2px rgba(120, 255, 0, 0.75);
+    }
+}
+
 #netlinks{
+    flex-grow: 1;
     list-style: none;
     display: flex;
     flex-flow: row;
