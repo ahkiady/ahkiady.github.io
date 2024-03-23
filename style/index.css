@@ -1,124 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
-
-h2{
-    text-align: center !important;
-}
-
-body {
-    background: #FFDE00;
-    background-size: cover;
-    font-family: "Noto Sans Condensed", sans-serif;
-    color: #262626;
+html, body {
     margin-top: 0 !important;
     padding-top: 0 !important;
 }
 
-html {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
+body{
+    background-color: #ffc700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#canvas{
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: -3;
-}
+#title{
+    font-family: "Fascinate Inline", system-ui;
+    font-size: 36pt;
 
-#profile{
     text-align: center;
-    width: 55%;
-    margin: 0 auto;
+
+    color: #1E1E1E;
+
+    position: absolute;
+    width: fit-content;
+    margin: auto;
+    top: 15%;
 }
 
-#pfp {
+#pfp{
+    border-radius: 100%;
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border: azure solid 05px;
-    border-radius: 100%;
-}
-
-.about{
-    color: black;
-    background: azure;
-    text-align: center;
-    padding: 25px;
-    width: 30%;
-    border-radius: 25px;
-}
-
-.about:hover, #pfp:hover{
-    animation: 0.25s ease-in 1 forwards chroma;
-}
-
-@keyframes chroma {
-    from{
-        box-shadow:  0 0 rgba(0, 255, 200, .75),
-                     0 0 rgba(255, 0, 120, 0.75),
-                     0 0 rgba(120, 255, 0, 0.75);
-    }
-
-    to{
-        box-shadow: -25px -25px rgba(0, 255, 200, .75),
-                     30px -15px rgba(255, 0, 120, 0.75),
-                     -10px 25px rgba(120, 255, 0, 0.75);
-    }
-}
-
-#container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    & li, h3 {
-        text-align: left;
-    }
-}
-
-p{
-    text-align: justify;
-}
-
-header{
-    top: 0;
+    position: absolute;
+    top: 30%;
     margin: 0 auto;
-    position: sticky;
-    width: 99%;
+}
+
+#pfp:hover{
+    box-shadow: 50px -50px #00C2FF66,
+                -50px -50px #28A74B66,
+                0px 50px #FF000066;
+}
+
+.clickable{
+    box-shadow: 0px 0px #00C2FF00,
+                0px 0px #28A74B00,
+                0px 0px #FF000000;
+    transition-property: box-shadow;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.45, 0.96, 0.34, 1.74);
+}
+
+.clickable:hover{
+    cursor: pointer;
+}
+
+nav{
     display: flex;
-    justify-content: flex-start;
-    padding: 5px;
-}
-
-#quotes{
-    font-family: "Rammetto One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    flex: 75%;
-}
-
-#quotes:hover, h1:hover{
-    animation: 1s both chromaText;
-}
-
-@keyframes chromaText {
-    from{
-        text-shadow:  0 0 rgba(0, 255, 200, .75),
-        0 0 rgba(255, 0, 120, 0.75),
-        0 0 rgba(120, 255, 0, 0.75);
-    }
-
-    to{
-        text-shadow: -2px -2px rgba(0, 255, 200, .75),
-        3px -1px rgba(255, 0, 120, 0.75),
-        -1px 2px rgba(120, 255, 0, 0.75);
-    }
-}
-
-#netlinks{
-    flex-grow: 1;
-    list-style: none;
-    display: flex;
-    flex-flow: row;
+    flex-direction: row;
     justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+}
+
+div.clickable{
+    background-color: #1E1E1E;
+    color: #ffc700;
+    font-family: "Fascinate Inline", system-ui;
+    font-size: 18pt;
+    border-radius: 25px;
+    text-align: center;
+    width: 250px;
+    padding: 5px 10px;
+}
+
+div.clickable:hover{
+    box-shadow: 35px -0px #00C2FF66,
+                -38px -7px #28A74B66,
+                -8px 15px #FF000066;
 }
